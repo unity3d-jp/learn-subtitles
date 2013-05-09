@@ -1,0 +1,323 @@
+1
+00:00:00,221 --> 00:00:01,671
+For this assignment you will need the 
+
+2
+00:00:01,671 --> 00:00:03,671
+robot lab, so download it using the link
+
+3
+00:00:03,671 --> 00:00:05,505
+on this page if you haven't already.
+
+4
+00:00:05,505 --> 00:00:07,129
+A Unity classic, this is the first thing 
+
+5
+00:00:07,129 --> 00:00:09,129
+you should try out in scripting.
+
+6
+00:00:09,129 --> 00:00:11,129
+The classic Spinning Cube.
+
+7
+00:00:11,129 --> 00:00:13,584
+A very simple thing to achieve but an
+
+8
+00:00:13,584 --> 00:00:15,221
+important first thing to try. 
+
+9
+00:00:15,221 --> 00:00:17,221
+Whilst you don't need the robot lab for this,
+
+10
+00:00:17,221 --> 00:00:19,221
+you can use an ordinary primitive cube,
+
+11
+00:00:19,221 --> 00:00:21,221
+it is worth downloading the package
+
+12
+00:00:21,221 --> 00:00:23,221
+for use with other assignments.
+
+13
+00:00:23,221 --> 00:00:26,963
+For this assignment open up the empty scene
+
+14
+00:00:26,963 --> 00:00:29,392
+in the scenes folder in the project panel.
+
+15
+00:00:29,892 --> 00:00:31,892
+Then go to File - Save Scene As
+
+16
+00:00:31,892 --> 00:00:36,628
+to back it up. We will save this as Spinning Cube.
+
+17
+00:00:38,744 --> 00:00:40,744
+And save it in to the Scenes folder.
+
+18
+00:00:41,948 --> 00:00:43,948
+Because we have done Save As we are now
+
+19
+00:00:43,948 --> 00:00:45,368
+inside that scene.
+
+20
+00:00:46,849 --> 00:00:48,849
+Go to the Models folder and grab
+
+21
+00:00:48,849 --> 00:00:51,277
+the prop powercube
+
+22
+00:00:51,277 --> 00:00:53,277
+and drag it in to the scene.
+
+23
+00:00:53,777 --> 00:00:55,777
+Using the Translate tool
+
+24
+00:00:56,829 --> 00:00:59,975
+drag it up in the Y axis, and then press F
+
+25
+00:00:59,975 --> 00:01:01,863
+on the keyboard with your cursor over the
+
+26
+00:01:01,863 --> 00:01:04,839
+scene view in order to focus on that object.
+
+27
+00:01:04,839 --> 00:01:07,103
+We will quickly setup the lighting for this.
+
+28
+00:01:07,103 --> 00:01:09,103
+Make sure that this object is on the
+
+29
+00:01:09,103 --> 00:01:10,745
+dynamic objects layer.
+
+30
+00:01:11,423 --> 00:01:13,423
+And then in the mesh renderer for the object
+
+31
+00:01:13,423 --> 00:01:15,423
+check Use Light Probes.
+
+32
+00:01:18,036 --> 00:01:19,746
+Now let's make our script.
+
+33
+00:01:20,246 --> 00:01:22,065
+Click the Add Component button at the 
+
+34
+00:01:22,065 --> 00:01:25,429
+bottom of the inspector. Go to New Script
+
+35
+00:01:26,702 --> 00:01:28,702
+and call your new script Spin,
+
+36
+00:01:29,202 --> 00:01:31,202
+and click Create and Add.
+
+37
+00:01:34,188 --> 00:01:36,188
+Once it's added double click the icon
+
+38
+00:01:36,188 --> 00:01:38,619
+for the script to launch it for editing.
+
+39
+00:01:39,572 --> 00:01:41,572
+In order to make our cube spin
+
+40
+00:01:41,572 --> 00:01:44,789
+we will need to modify its transform every frame.
+
+41
+00:01:44,789 --> 00:01:47,582
+So we will make use of the update function.
+
+42
+00:01:47,582 --> 00:01:49,582
+Delete the start function and the comments
+
+43
+00:01:49,582 --> 00:01:50,975
+that are in the script.
+
+44
+00:01:51,475 --> 00:01:53,144
+We want to be able to control the speed
+
+45
+00:01:53,144 --> 00:01:55,144
+of this using the inspector
+
+46
+00:01:55,144 --> 00:01:57,144
+so we will make a public variable that we
+
+47
+00:01:57,144 --> 00:01:58,490
+can adjust there.
+
+48
+00:01:58,990 --> 00:02:01,787
+Start by adding a public float variable,
+
+49
+00:02:01,787 --> 00:02:04,790
+a decimal placed number, called 'speed'.
+
+50
+00:02:04,790 --> 00:02:07,401
+Then as stated we will effect the transform
+
+51
+00:02:07,401 --> 00:02:10,002
+of the object. So to begin we will start by
+
+52
+00:02:10,002 --> 00:02:13,907
+saying transform.rotate.
+
+53
+00:02:14,877 --> 00:02:16,724
+And into the brackets we will specify a 
+
+54
+00:02:16,724 --> 00:02:20,046
+rotation, we are going to use vector3.up,
+
+55
+00:02:20,046 --> 00:02:22,046
+which is the shortcut to world-space up
+
+56
+00:02:22,046 --> 00:02:26,041
+direction, the vector3 (0, 1, 0).
+
+57
+00:02:26,041 --> 00:02:28,768
+And then we will use our speed variable
+
+58
+00:02:28,768 --> 00:02:32,607
+and multiply this by time.deltaTime
+
+59
+00:02:32,607 --> 00:02:34,441
+in order to smooth it out.
+
+60
+00:02:34,441 --> 00:02:36,066
+If you are not familiar with DeltaTime
+
+61
+00:02:36,066 --> 00:02:38,066
+check out the lesson on this link below.
+
+62
+00:02:38,066 --> 00:02:40,569
+We will also give our speed variable
+
+63
+00:02:40,569 --> 00:02:43,070
+a default value. When we're done we will save
+
+64
+00:02:43,070 --> 00:02:46,154
+our script and return to Unity.
+
+65
+00:02:46,654 --> 00:02:48,654
+Now all we need to do is press play
+
+66
+00:02:49,154 --> 00:02:51,621
+and we have a spinning cube. And because
+
+67
+00:02:51,621 --> 00:02:54,179
+the speed variable is a public variable
+
+68
+00:02:54,179 --> 00:02:55,495
+we can adjust it
+
+69
+00:02:56,907 --> 00:02:58,907
+whilst the game is playing.
+
+70
+00:03:11,299 --> 00:03:12,927
+One other thing you may wish to do to 
+
+71
+00:03:12,927 --> 00:03:15,382
+finish this scene off is to select your
+
+72
+00:03:15,382 --> 00:03:17,689
+camera, so underneath cameras choose
+
+73
+00:03:17,689 --> 00:03:18,964
+camera01.
+
+74
+00:03:19,644 --> 00:03:22,450
+And with your scene view showing exactly
+
+75
+00:03:22,450 --> 00:03:24,754
+what you would like to see in the game
+
+76
+00:03:25,143 --> 00:03:26,689
+select the camera and go to
+
+77
+00:03:26,689 --> 00:03:29,975
+Game Object - Align With View.
+
+78
+00:03:31,069 --> 00:03:33,069
+That will move the camera to the view that
+
+79
+00:03:33,069 --> 00:03:35,069
+you have setup in the scene view.
+
+80
+00:03:35,735 --> 00:03:37,457
+Now you can just press play again
+
+81
+00:03:37,917 --> 00:03:39,917
+and watch the results of your work.
