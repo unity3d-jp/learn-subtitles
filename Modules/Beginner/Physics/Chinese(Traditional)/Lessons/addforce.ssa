@@ -1,0 +1,74 @@
+﻿[Script Info]
+;本字幕檔案用 SrtEdit MPC播放版 Version 5.2 編輯製作
+;Unicode SrtEdit Copyright(C) 2005-2009 袁衛國
+
+Title: 
+Original Script: 
+Original Translation: 
+Original Timing: 
+Original Editing: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00
+Collisions: Normal
+PlayResX: 0
+PlayResY: 0
+Timer: 100.0000
+Synch Point: 
+WrapStyle: 0
+ScaledBorderAndShadow: no
+
+[V4 Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, TertiaryColour, BackColour, Bold, Italic, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, AlphaLevel, Encoding
+Style: Default,Arial,20,&HFFFFFF,&H00FFFF,&H000000,&H000000,-1,0,1,2,3,2,20,20,20,0,136
+
+[Events]
+Format: Marked, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: Marked=0,0:00:00.31,0:00:02.71,Default,NTP,0000,0000,0000,!Effect,Add Force函式用來讓一個物理物件移動
+Dialogue: Marked=0,0:00:02.71,0:00:05.37,Default,NTP,0000,0000,0000,!Effect,Add Force函式用來讓一個物理物件移動
+Dialogue: Marked=0,0:00:05.37,0:00:07.10,Default,NTP,0000,0000,0000,!Effect,或用來改變物件移動方向或速度
+Dialogue: Marked=0,0:00:07.10,0:00:08.08,Default,NTP,0000,0000,0000,!Effect,或用來改變物件移動方向或速度
+Dialogue: Marked=0,0:00:08.27,0:00:10.61,Default,NTP,0000,0000,0000,!Effect,函式帶有一個必要的變數
+Dialogue: Marked=0,0:00:10.61,0:00:12.69,Default,NTP,0000,0000,0000,!Effect,和另一個選項變數
+Dialogue: Marked=0,0:00:12.69,0:00:14.69,Default,NTP,0000,0000,0000,!Effect,{\an8}第一個變數是向量(Vector)
+Dialogue: Marked=0,0:00:14.69,0:00:16.69,Default,NTP,0000,0000,0000,!Effect,{\an8}表示施加力道的方向和大小
+Dialogue: Marked=0,0:00:16.69,0:00:19.09,Default,NTP,0000,0000,0000,!Effect,{\an8}舉例來說
+Dialogue: Marked=0,0:00:19.09,0:00:21.82,Default,NTP,0000,0000,0000,!Effect,{\an8}我們使用-transform.forward
+Dialogue: Marked=0,0:00:22.14,0:00:24.22,Default,NTP,0000,0000,0000,!Effect,{\an8}這個指令是物件本地座標的Z軸簡寫
+Dialogue: Marked=0,0:00:24.22,0:00:26.73,Default,NTP,0000,0000,0000,!Effect,{\an8}這個指令是物件本地座標的Z軸簡寫
+Dialogue: Marked=0,0:00:26.73,0:00:27.86,Default,NTP,0000,0000,0000,!Effect,{\an8}這個指令是物件本地座標的Z軸簡寫
+Dialogue: Marked=0,0:00:27.86,0:00:30.38,Default,NTP,0000,0000,0000,!Effect,{\an8}我們前面加了-負號往反方向X500倍力量推動
+Dialogue: Marked=0,0:00:30.38,0:00:32.38,Default,NTP,0000,0000,0000,!Effect,{\an8}我們前面加了-負號往反方向X500倍力量推動
+Dialogue: Marked=0,0:00:32.38,0:00:35.05,Default,NTP,0000,0000,0000,!Effect,這個範例我們使用MouseDown函式來觸發
+Dialogue: Marked=0,0:00:35.05,0:00:36.78,Default,NTP,0000,0000,0000,!Effect,這個範例我們使用MouseDown函式來觸發
+Dialogue: Marked=0,0:00:36.78,0:00:39.52,Default,NTP,0000,0000,0000,!Effect,除了施加力量以外
+Dialogue: Marked=0,0:00:39.52,0:00:41.52,Default,NTP,0000,0000,0000,!Effect,我們也順便啟用對象物件的重力
+Dialogue: Marked=0,0:00:41.74,0:00:43.52,Default,NTP,0000,0000,0000,!Effect,來看看成果
+Dialogue: Marked=0,0:00:43.84,0:00:45.67,Default,NTP,0000,0000,0000,!Effect,這個腳本放在防爆門中間的門上
+Dialogue: Marked=0,0:00:45.67,0:00:47.67,Default,NTP,0000,0000,0000,!Effect,這個腳本放在防爆門中間的門上
+Dialogue: Marked=0,0:00:49.13,0:00:52.87,Default,NTP,0000,0000,0000,!Effect,當我點它 - 一個力道往反方向推出
+Dialogue: Marked=0,0:00:52.87,0:00:54.87,Default,NTP,0000,0000,0000,!Effect,當我點它 - 一個力道往反方向推出
+Dialogue: Marked=0,0:00:56.13,0:00:58.13,Default,NTP,0000,0000,0000,!Effect,由於我使用MouseDown函式
+Dialogue: Marked=0,0:00:58.13,0:01:00.13,Default,NTP,0000,0000,0000,!Effect,這個力道只會執行一次
+Dialogue: Marked=0,0:01:00.13,0:01:02.25,Default,NTP,0000,0000,0000,!Effect,Add Force也可以用在Fixed Update裡
+Dialogue: Marked=0,0:01:02.25,0:01:04.25,Default,NTP,0000,0000,0000,!Effect,永來產生永遠的力量
+Dialogue: Marked=0,0:01:04.36,0:01:06.54,Default,NTP,0000,0000,0000,!Effect,第二個變數宣告力量的模式
+Dialogue: Marked=0,0:01:06.54,0:01:07.92,Default,NTP,0000,0000,0000,!Effect,第二個變數宣告力量的模式
+Dialogue: Marked=0,0:01:08.28,0:01:10.36,Default,NTP,0000,0000,0000,!Effect,{\an8}如果沒給值就會使用預設的Force模式
+Dialogue: Marked=0,0:01:10.36,0:01:11.89,Default,NTP,0000,0000,0000,!Effect,{\an8}如果沒給值就會使用預設的Force模式
+Dialogue: Marked=0,0:01:12.16,0:01:14.16,Default,NTP,0000,0000,0000,!Effect,{\an8}Force透過質量來增加一個力量到物件剛體
+Dialogue: Marked=0,0:01:14.16,0:01:15.90,Default,NTP,0000,0000,0000,!Effect,{\an8}Force透過質量來增加一個力量到物件剛體
+Dialogue: Marked=0,0:01:15.90,0:01:18.18,Default,NTP,0000,0000,0000,!Effect,{\an8}Acceleration忽略質量增加一個力量到物件剛體
+Dialogue: Marked=0,0:01:18.18,0:01:20.03,Default,NTP,0000,0000,0000,!Effect,{\an8}Acceleration忽略質量增加一個力量到物件剛體
+Dialogue: Marked=0,0:01:20.03,0:01:22.43,Default,NTP,0000,0000,0000,!Effect,{\an8}Impulse透過質量增加一個瞬間衝力到物件剛體
+Dialogue: Marked=0,0:01:22.43,0:01:24.94,Default,NTP,0000,0000,0000,!Effect,{\an8}Velocity Change忽略質量
+Dialogue: Marked=0,0:01:24.94,0:01:26.94,Default,NTP,0000,0000,0000,!Effect,{\an8}增加一個瞬間速度變化給物件鋼體
+Dialogue: Marked=0,0:01:26.94,0:01:28.44,Default,NTP,0000,0000,0000,!Effect,{\an8}增加一個瞬間速度變化給物件鋼體
+Dialogue: Marked=0,0:01:28.44,0:01:30.27,Default,NTP,0000,0000,0000,!Effect,還有，力量會受到剛體上Drag的影響
+Dialogue: Marked=0,0:01:30.27,0:01:31.99,Default,NTP,0000,0000,0000,!Effect,還有，力量會受到剛體上Drag的影響
+Dialogue: Marked=0,0:01:31.99,0:01:33.99,Default,NTP,0000,0000,0000,!Effect,還有，力量會受到剛體上Drag的影響
+Dialogue: Marked=0,0:01:33.99,0:01:35.99,Default,NTP,0000,0000,0000,!Effect,比如說，如果調高Drag
+Dialogue: Marked=0,0:01:41.60,0:01:44.18,Default,NTP,0000,0000,0000,!Effect,力道將會減弱
+Dialogue: Marked=0,0:01:45.17,0:01:47.17,Default,NTP,0000,0000,0000,!Effect,相對的，你就要調高
+Dialogue: Marked=0,0:01:47.17,0:01:50.08,Default,NTP,0000,0000,0000,!Effect,力道的倍數來產生更大的力量
+Dialogue: Marked=0,0:01:50.08,0:01:52.77,Default,NTP,0000,0000,0000,!Effect,力道的倍數來產生更大的力量

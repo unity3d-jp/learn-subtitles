@@ -1,0 +1,66 @@
+﻿[Script Info]
+;本字幕檔案用 SrtEdit MPC播放版 Version 5.2 編輯製作
+;Unicode SrtEdit Copyright(C) 2005-2009 袁衛國
+
+Title: 
+Original Script: 
+Original Translation: 
+Original Timing: 
+Original Editing: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00
+Collisions: Normal
+PlayResX: 0
+PlayResY: 0
+Timer: 100.0000
+Synch Point: 
+WrapStyle: 0
+ScaledBorderAndShadow: no
+
+[V4 Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, TertiaryColour, BackColour, Bold, Italic, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, AlphaLevel, Encoding
+Style: Default,Arial,20,&HFFFFFF,&H00FFFF,&H000000,&H000000,-1,0,1,2,3,2,20,20,20,0,136
+
+[Events]
+Format: Marked, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: Marked=0,0:00:00.00,0:00:02.21,Default,NTP,0000,0000,0000,!Effect,在Unity裡要實現碰撞偵測
+Dialogue: Marked=0,0:00:02.21,0:00:04.21,Default,NTP,0000,0000,0000,!Effect,必須要有兩個碰撞體
+Dialogue: Marked=0,0:00:04.21,0:00:05.75,Default,NTP,0000,0000,0000,!Effect,其中一個要有OnCollisionEnter函式在腳本裡
+Dialogue: Marked=0,0:00:05.75,0:00:07.72,Default,NTP,0000,0000,0000,!Effect,其中一個要有OnCollisionEnter函式在腳本裡
+Dialogue: Marked=0,0:00:07.81,0:00:10.36,Default,NTP,0000,0000,0000,!Effect,{\an8}語法 Void OnCollisionEnter(Collision 變數)
+Dialogue: Marked=0,0:00:10.36,0:00:12.36,Default,NTP,0000,0000,0000,!Effect,{\an8}語法 Void OnCollisionEnter(Collision 變數)
+Dialogue: Marked=0,0:00:12.86,0:00:14.86,Default,NTP,0000,0000,0000,!Effect,{\an8}從這裡你可以調出碰撞物件的資訊
+Dialogue: Marked=0,0:00:14.86,0:00:16.86,Default,NTP,0000,0000,0000,!Effect,{\an8}從這裡你可以調出碰撞物件的資訊
+Dialogue: Marked=0,0:00:16.86,0:00:18.29,Default,NTP,0000,0000,0000,!Effect,{\an8}從這裡你可以調出碰撞物件的資訊
+Dialogue: Marked=0,0:00:18.75,0:00:21.24,Default,NTP,0000,0000,0000,!Effect,從這個範例中
+Dialogue: Marked=0,0:00:21.24,0:00:24.09,Default,NTP,0000,0000,0000,!Effect,我們用帶有彈力材質的霹靂球
+Dialogue: Marked=0,0:00:24.09,0:00:26.09,Default,NTP,0000,0000,0000,!Effect,撞擊這些電箱
+Dialogue: Marked=0,0:00:27.03,0:00:29.66,Default,NTP,0000,0000,0000,!Effect,現在球上面的程式腳本長這樣
+Dialogue: Marked=0,0:00:30.80,0:00:32.80,Default,NTP,0000,0000,0000,!Effect,目前函式裡面甚麼都沒有
+Dialogue: Marked=0,0:00:33.30,0:00:35.30,Default,NTP,0000,0000,0000,!Effect,我們寫程式來檢查碰撞體何時碰到電箱
+Dialogue: Marked=0,0:00:35.30,0:00:37.30,Default,NTP,0000,0000,0000,!Effect,我們寫程式來檢查碰撞體何時碰到電箱
+Dialogue: Marked=0,0:00:37.80,0:00:40.00,Default,NTP,0000,0000,0000,!Effect,只需要用IF語法來檢查'col'變數取得它的內容
+Dialogue: Marked=0,0:00:40.00,0:00:42.24,Default,NTP,0000,0000,0000,!Effect,只需要用IF語法來檢查'col'變數取得它的內容
+Dialogue: Marked=0,0:00:42.24,0:00:44.93,Default,NTP,0000,0000,0000,!Effect,現在來示範如何檢查碰撞對象
+Dialogue: Marked=0,0:00:44.93,0:00:47.27,Default,NTP,0000,0000,0000,!Effect,現在來示範如何檢查碰撞對象
+Dialogue: Marked=0,0:00:47.27,0:00:49.66,Default,NTP,0000,0000,0000,!Effect,物件已經存在Col結構，語法是
+Dialogue: Marked=0,0:00:49.66,0:00:53.64,Default,NTP,0000,0000,0000,!Effect,if(col.gameobject.name == "prop_powerCube")
+Dialogue: Marked=0,0:00:53.64,0:00:55.64,Default,NTP,0000,0000,0000,!Effect,prop_powerCube是電箱的名字
+Dialogue: Marked=0,0:00:55.64,0:00:58.67,Default,NTP,0000,0000,0000,!Effect,if(col.gameobject.name == "prop_powerCube")
+Dialogue: Marked=0,0:00:58.67,0:01:00.67,Default,NTP,0000,0000,0000,!Effect,現在這個IF語法只會在
+Dialogue: Marked=0,0:01:00.67,0:01:02.67,Default,NTP,0000,0000,0000,!Effect,球碰到電箱的時候執行
+Dialogue: Marked=0,0:01:02.67,0:01:04.67,Default,NTP,0000,0000,0000,!Effect,如果進入了迴圈，就用摧毀(Destroy)指令
+Dialogue: Marked=0,0:01:04.67,0:01:06.67,Default,NTP,0000,0000,0000,!Effect,如果進入了迴圈，就用摧毀(Destroy)指令
+Dialogue: Marked=0,0:01:06.67,0:01:08.16,Default,NTP,0000,0000,0000,!Effect,在編輯器裡，你可以輸入變數名稱後面加.(點)
+Dialogue: Marked=0,0:01:08.16,0:01:10.52,Default,NTP,0000,0000,0000,!Effect,在編輯器裡，你可以輸入變數名稱後面加.(點)
+Dialogue: Marked=0,0:01:10.52,0:01:13.16,Default,NTP,0000,0000,0000,!Effect,來檢視有哪些資料類別你可以呼叫
+Dialogue: Marked=0,0:01:13.66,0:01:15.08,Default,NTP,0000,0000,0000,!Effect,你會看到各種不同功能的清單可以呼叫
+Dialogue: Marked=0,0:01:15.08,0:01:17.08,Default,NTP,0000,0000,0000,!Effect,你會看到各種不同功能的清單可以呼叫
+Dialogue: Marked=0,0:01:17.37,0:01:19.37,Default,NTP,0000,0000,0000,!Effect,更多資料請參考官網碰撞體類別資料
+Dialogue: Marked=0,0:01:19.37,0:01:21.37,Default,NTP,0000,0000,0000,!Effect,更多資料請參考官網碰撞體類別資料
+Dialogue: Marked=0,0:01:21.37,0:01:23.37,Default,NTP,0000,0000,0000,!Effect,查詢有哪些功能可以呼叫
+Dialogue: Marked=0,0:01:23.71,0:01:26.44,Default,NTP,0000,0000,0000,!Effect,現在我們來摧毀遊戲物件
+Dialogue: Marked=0,0:01:26.89,0:01:28.89,Default,NTP,0000,0000,0000,!Effect,當我們將腳本存檔時
+Dialogue: Marked=0,0:01:29.98,0:01:31.98,Default,NTP,0000,0000,0000,!Effect,你會看到當碰撞發生時
+Dialogue: Marked=0,0:01:32.48,0:01:34.78,Default,NTP,0000,0000,0000,!Effect,我們的球會開始摧毀那些電箱
