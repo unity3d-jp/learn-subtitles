@@ -685,3 +685,4 @@ FileメニューからSave Sceneを選びます。
 172
 00:07:09,293 --> 00:07:11,812
 Game Controller 中で使用することにします。
+(翻訳:gamesonytablet)

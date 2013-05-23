@@ -1373,3 +1373,4 @@ Light mapping を Real Time Only に変更します。
 344
 00:14:55,030 --> 00:14:57,030
 メニューから File - Save Scene を選択して下さい。
+(翻訳:gamesonytablet)

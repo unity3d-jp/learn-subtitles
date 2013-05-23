@@ -461,3 +461,4 @@ an instance of another class.
 116
 00:04:21,446 --> 00:04:24,574
 They're for use only within the class itself.
+(翻訳:gamesonytablet)

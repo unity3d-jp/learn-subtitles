@@ -91,3 +91,4 @@ Similarly we can make it do something more
 23
 00:01:03,985 --> 00:01:05,985
 結果は次のとおりになります。
+(翻訳:gamesonytablet)

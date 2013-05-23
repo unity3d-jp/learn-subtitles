@@ -257,3 +257,4 @@ Kinematic である Rigidbody である場合
 65
 00:02:54,820 --> 00:02:56,820
 だけです。
+(翻訳:gamesonytablet)

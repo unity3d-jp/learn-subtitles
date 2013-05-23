@@ -597,3 +597,4 @@ Add All Necessary Screen Shots (必要なスクリーンショットを全て追
 150
 00:06:30,224 --> 00:06:31,969
 AppStore に提出されます。
+(翻訳:gamesonytablet)

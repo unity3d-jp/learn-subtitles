@@ -141,3 +141,4 @@ Resolution および Presentation エリアの解像度は
 36
 00:01:47,093 --> 00:01:49,093
 以下のマニュアルリンクを参照して下さい。
+(翻訳:gamesonytablet)

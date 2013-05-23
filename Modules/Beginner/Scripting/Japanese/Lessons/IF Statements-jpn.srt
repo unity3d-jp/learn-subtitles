@@ -145,3 +145,4 @@ it had gotten cold then we might not
 37
 00:01:26,001 --> 00:01:26,913
 判断させることが出来ます。
+(翻訳:gamesonytablet)

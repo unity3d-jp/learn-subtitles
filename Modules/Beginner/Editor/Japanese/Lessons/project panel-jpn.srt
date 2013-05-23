@@ -169,3 +169,4 @@ OS 上で編集するのではなく
 43
 00:02:23,138 --> 00:02:25,626
 Assets から Asset Store に切り替えます。
+(翻訳:gamesonytablet)
