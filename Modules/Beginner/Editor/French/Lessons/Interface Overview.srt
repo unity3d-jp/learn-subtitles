@@ -1,0 +1,127 @@
+1
+00:00:00,510 --> 00:00:03,472
+Utiliser l'interface d'Unity est facile.
+
+2
+00:00:04,094 --> 00:00:07,378
+L'interface est constitué de cinq panneaux principeaux.
+
+3
+00:00:07,753 --> 00:00:11,543
+La Scène, la Hiérarchie, le Panneau de jeu [Game View],
+
+4
+00:00:11,543 --> 00:00:15,186
+le Panneu du projet [Project Panel] et le panneau d'inspection [Inspector panel]
+
+5
+00:00:15,781 --> 00:00:18,782
+La Scène est la partie ou vous construisez visuellement votre jeu
+
+6
+00:00:18,782 --> 00:00:22,456
+en manipulant des objets en 2D et 3D.
+
+7
+00:00:24,406 --> 00:00:27,416
+Le Panneau de jeu est la partie ou vous prévisualisez et testez le jeu,
+
+8
+00:00:27,416 --> 00:00:30,049
+quand vous cliquez sur le bouton sur le bouton play,
+
+9
+00:00:30,049 --> 00:00:33,724
+vous permettant de tester le jeu a n'importe quel moment.
+
+10
+00:00:34,938 --> 00:00:38,974
+La Hiérarchie liste tous les objects de la scène par ordre alphabétique
+
+11
+00:00:38,974 --> 00:00:42,516
+et par ordre hiérarchique pour afficher les objects parents,
+
+12
+00:00:42,516 --> 00:00:44,519
+afin d'organiser les objets.
+
+13
+00:00:44,720 --> 00:00:47,237
+Le Panneau du projet montre tous les atouts avec lesquels vous travaillez,
+
+14
+00:00:49,159 --> 00:00:52,448
+vous donnant accès rapide à tout ce que vous utilisez pour construire le jeu
+
+15
+00:00:52,448 --> 00:00:56,704
+comme les scripts, textures, modèles 3D, vidéo et audio.
+
+16
+00:00:57,299 --> 00:00:59,797
+Le Panneau d'inspection affiche les propriétés de n'importe quel objet sélectionné,
+
+17
+00:01:02,055 --> 00:01:04,965
+que ce soit un atout ou panneau de configuration.
+
+18
+00:01:05,157 --> 00:01:07,807
+Cliquez sur quelquechose de nouveau et le Panneau d'inspection
+
+19
+00:01:07,807 --> 00:01:09,807
+affiche immédiatement ses propriétés.
+
+20
+00:01:13,399 --> 00:01:16,519
+Les boutons de lecture vous permettent de tester le jeu,
+
+21
+00:01:16,519 --> 00:01:22,613
+vous pouvez pauser et passez de trame en trame pour tester plus en détails.
+
+22
+00:01:25,185 --> 00:01:28,605
+Les outils en haut à gauche vous permettent de naviguer les Scène
+
+23
+00:01:28,605 --> 00:01:31,149
+et aussi de manipuler les objects.
+
+24
+00:01:34,525 --> 00:01:38,786
+Il y a deux toggles, un pour passer de l'espace local à l'espace mondial,
+
+25
+00:01:38,786 --> 00:01:41,581
+l'autre pour passer de la rotation autour du centre à la rotation autour du pivot.
+
+26
+00:01:48,000 --> 00:01:50,177
+Le menu déroulant des calques vous permettent
+
+27
+00:01:50,177 --> 00:01:53,108
+d'afficher ou cacher les calques dans votre Scène.
+
+28
+00:01:55,646 --> 00:01:58,136
+Le menu déroulant des calques permet de passer
+
+29
+00:01:58,136 --> 00:02:01,865
+d'un calque à l'autre dans l'interface d'Unity.
+
+30
+00:01:42,499 --> 00:01:46,859
+Les calques et le menu déroulant des calques se trouvent en haut à droite de l'interface.
+
+31
+00:02:07,568 --> 00:02:09,769
+Cela termine l'introduction de 'interface.
+
+32
+00:02:09,769 --> 00:02:14,892
+Regardez nos autres vidéos pour en apprendre plus sur chaque panneau.
